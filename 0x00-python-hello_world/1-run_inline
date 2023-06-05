@@ -1,0 +1,3 @@
+#!/usr/bin/python3p
+PYCODE=$1
+python3 -c "$PYCODE"
