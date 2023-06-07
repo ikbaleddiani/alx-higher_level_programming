@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for i in range(0, 8):
-    for j in range(0, 10):
-        if i < j:
-            print("{0}{1}".format(i, j), end=", ")
-print("{0}{1}".format(i + 1, j))
+for digit1 in range(0, 8):
+    for digit2 in range(0, 10):
+        if digit1 < digit2:
+            print("{0}{1}".format(digit1, digit2), end=", ")
+print("{0}{1}".format(digit1 + 1, digit2))
