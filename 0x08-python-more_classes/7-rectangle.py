@@ -8,13 +8,13 @@ class Rectangle:
     "representation of a rectangle"
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
 
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
-        print_symbol = "#"
 
     @property
     def width(self):
