@@ -14,7 +14,7 @@ class Rectangle:
 
         self.height = height
         self.width = width
-        Rectangle.number_of_instances += 1
+        type(self).number_of_instances += 1
 
     @property
     def width(self):
@@ -66,7 +66,7 @@ class Rectangle:
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
 
     def __del__(self):
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
 
     def bigger_or_equal(rect_1, rect_2):
