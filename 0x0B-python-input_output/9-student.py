@@ -3,7 +3,6 @@
 """Defiens a student class that have to_json public method"""
 
 
-
 class Student:
     """student class"""
 
@@ -14,6 +13,6 @@ class Student:
         self.age = age
 
     def to_json(self):
-         """returns a json representatiion of the object"""
+        """returns a json representatiion of the object"""
 
         return self.__dict__
