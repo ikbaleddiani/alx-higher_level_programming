@@ -2,6 +2,7 @@
 
 """defines a function pascal_triangle"""
 
+
 def pascal_triangle(n):
     """prtint the pascal triangle"""
     matrix = []
