@@ -8,7 +8,7 @@ def pascal_triangle(n):
 
     matrix = []
     if n <= 0:
-        return []
+        return list()
 
     for i in range(n):
         num = 11 ** i
