@@ -5,7 +5,11 @@
 
 def pascal_triangle(n):
     """prtint the pascal triangle"""
+
     matrix = []
+    if n <= 0:
+        return []
+
     for i in range(n):
         num = 11 ** i
         s = str(num)
