@@ -2,6 +2,7 @@
 
 """student to json"""
 
+
 class Student:
     """student class"""
 
