@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
+"""rectrangle class models"""
+
 from models.base import Base
 
-"""class models"""
 
 
 class Rectangle(Base):
