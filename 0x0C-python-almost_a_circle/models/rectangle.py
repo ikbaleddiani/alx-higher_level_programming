@@ -5,7 +5,6 @@
 from models.base import Base
 
 
-
 class Rectangle(Base):
     """Defines a rectangle"""
 
