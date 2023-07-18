@@ -106,3 +106,9 @@ class Rectangle(Base):
             for key in kwargs:
                 if key in lists:
                     self.__setattr__(key, kwargs[key])
+
+    def to_dictionary(self):
+        ob = {}
+        for i in ['id', 'width', 'height', 'x', 'y']:
+            ob[i] = getattr(self, i)
+        return ob
