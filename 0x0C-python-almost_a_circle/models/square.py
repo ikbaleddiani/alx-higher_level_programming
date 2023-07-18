@@ -45,7 +45,7 @@ class Square(Rectangle):
                     self.__setattr__(key, kwargs[key])
 
     def to_dictionary(self):
-        """dictionary of Square"""
+        """dictionary of Square#"""
 
         ob = {}
         for i in ['id', 'size', 'x', 'y']:
