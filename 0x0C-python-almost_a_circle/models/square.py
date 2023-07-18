@@ -43,3 +43,12 @@ class Square(Rectangle):
             for key in kwargs:
                 if key in lists:
                     self.__setattr__(key, kwargs[key])
+
+    def to_dictionary(self):
+        """dictionary of Square"""
+
+        ob = {}
+        lists = ['id', 'size', 'x', 'y']
+        for i in lists:
+            ob[i] = getattr(self, i)
+        return ob
