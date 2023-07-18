@@ -108,6 +108,8 @@ class Rectangle(Base):
                     self.__setattr__(key, kwargs[key])
 
     def to_dictionary(self):
+        """rectangle dictionary"""
+
         ob = {}
         for i in ['id', 'width', 'height', 'x', 'y']:
             ob[i] = getattr(self, i)
