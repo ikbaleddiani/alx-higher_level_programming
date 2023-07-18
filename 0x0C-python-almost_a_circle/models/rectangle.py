@@ -97,12 +97,12 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """update attributes"""
         if args:
-            listms = ['id', 'height', 'width', 'x', 'y']
+            lists = ['id', 'height', 'width', 'x', 'y']
             i = 0
             for arg in args:
-                setattr(self, listms[i], arg)
+                setattr(self, lists[i], arg)
                 i = i + 1
         else:
             for key in kwargs:
-                for key in lisms:
+                if key in lists:
                     self.__setattr__(key, kwargs[key])
