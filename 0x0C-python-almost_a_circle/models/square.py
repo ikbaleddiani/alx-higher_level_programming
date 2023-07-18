@@ -12,3 +12,10 @@ class Square(Rectangle):
         """ method inistialization"""
 
         super().__init__(size, size, x, y, id)
+
+    def __str__(self):
+        """update: returns [Square] (<id>) <x>/<y> - <size>"""
+
+        return ("[{}] ({}) {}/{} - {}".format(self.__class__.__name__,
+                                            self.id, self.x,
+                                            self.y, self.width))
