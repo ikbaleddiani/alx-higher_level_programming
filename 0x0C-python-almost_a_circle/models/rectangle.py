@@ -96,7 +96,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """update attributes"""
-        lists = ['id', 'height', 'width', 'x', 'y']
+        lists = ['id', 'width', 'height' 'x', 'y']
         if args:
             i = 0
             for arg in args:
