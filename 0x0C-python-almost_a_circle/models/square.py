@@ -33,7 +33,7 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """updating attributes"""
 
-        listme = ['id', 'size', 'x', 'y']
+        lists = ['id', 'size', 'x', 'y']
         if args:
             i = 0
             for arg in args:
