@@ -48,7 +48,6 @@ class Square(Rectangle):
         """dictionary of Square"""
 
         ob = {}
-        lists = ['id', 'size', 'x', 'y']
-        for i in lists:
+        for i in ['id', 'size', 'x', 'y']:
             ob[i] = getattr(self, i)
         return ob
