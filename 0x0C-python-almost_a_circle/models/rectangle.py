@@ -96,8 +96,8 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """update attributes"""
+        lists = ['id', 'height', 'width', 'x', 'y']
         if args:
-            lists = ['id', 'height', 'width', 'x', 'y']
             i = 0
             for arg in args:
                 setattr(self, lists[i], arg)
