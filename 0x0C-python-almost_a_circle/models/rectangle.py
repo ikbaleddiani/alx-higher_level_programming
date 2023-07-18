@@ -39,7 +39,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """height setter method"""
-        if type(height) != int:
+        if type(height) is not int:
             raise TypeError("height must be an integer")
         if height <= 0:
             raise ValueError("height must be > 0")
@@ -93,3 +93,16 @@ class Rectangle(Base):
                                                 self.__y,
                                                 self.__width, self.__height
                                                 )
+
+    def update(self, *args, **kwargs):
+        """update attributes"""
+        if args:
+            listms = ['id', 'height', 'width', 'x', 'y']
+            i = 0
+            for arg in args:
+                setattr(self, listms[i], arg)
+                i = i + 1
+        else:
+            for key in kwargs:
+                for key in lisms:
+                    self.__setattr__(key, kwargs[key])
