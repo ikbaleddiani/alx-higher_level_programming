@@ -43,4 +43,3 @@ class Base:
                 j_str = Base.to_json_string(j_list)
         with open(cls.__name__ + '.json', 'w') as n:
             n.write(j_str)
-
